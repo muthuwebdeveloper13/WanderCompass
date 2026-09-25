@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WanderCompass - Wishlist</title>
+
+    <link rel="shortcut icon" href="./assets/icons/plane-departure-solid-full.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/components.css">
+
+    <link rel="stylesheet" href="./css/responsive.css">
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <style>
+        /* ================= WISHLIST HEART ================= */
+
+        .wishlist-heart {
+
+            color: #ff0000;
+
+            cursor: pointer;
+
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+
+        }
+
+
+        .wishlist-heart:hover {
+
+            color: #ff0000;
+
+            transform: scale(1.15);
+
+        }
+
+
+        /* ================= WISHLIST CARDS ================= */
+
+        .wishlist-cards-container {
+
+            justify-content: flex-start;
+
+            padding-bottom: 20px;
+
+        }
+
+
+        /* Hide cards area when empty */
+
+        .wishlist-card-section {
+
+            display: none;
+
+        }
+
+
+        /* Empty message */
+
+        .wishlist-no-results {
+
+            display: none;
+
+            padding: 20px 20px;
+
+        }
+
+
+        .wishlist-destination-count {
+
+            padding: 10px 3%;
+
+        }
+
+
+        .wishlist-destination-count p {
+
+            font-size: 20px;
+
+        }
+
+
+        .wishlist-destination-count i {
+
+            color: #ff0000;
+
+            margin-right: 8px;
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <div class="container">
+
+        <nav>
+
+            <div class="nav-logo">
+
+                <p>
+                    WanderCompass
+                </p>
+
+            </div>
+
+
+            <div class="nav-items">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="destinations.html" class="nav-link">
+                    Destinations
+                </a>
+
+                <a href="wishlist.html" class="nav-link">
+                    Wishlist
+                </a>
+
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- ================= HERO ================= -->
+
+        <div class="wishlist-hero-image">
+
+            <div class="wishlist-hero-head">
+
+                <p>
+                    My Wishlist
+                </p>
+
+            </div>
+
+
+            <div class="wishlist-hero-sub-head">
+
+                <p>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    /
+
+                    <a href="wishlist.html">
+                        YOUR FAVORITES
+                    </a>
+
+                </p>
+
+            </div>
+
+
+            <div class="wishlist-hero-des">
+
+                <p>
+                    Your favorite destinations saved for later.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= COUNT ================= -->
+
+    <div class="wishlist-destination">
+
+        <div class="wishlist-destination-count">
+
+            <p>
+
+                <i class="fa-solid fa-heart"></i>
+
+                <span id="wishlistCount">
+                    0
+                </span>
+
+                Saved Destinations
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= WISHLIST CARDS ================= -->
+
+    <div class="popular-destinations wishlist-card-section" id="wishlistSection">
+
+        <div class="dest-head">
+
+            <p>
+                My Favorite Destinations
+            </p>
+
+        </div>
+
+
+        <div class="dest-cards-conainer wishlist-cards-container" id="wishlistCards">
+
+            <!-- JavaScript creates wishlist cards -->
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= EMPTY WISHLIST ================= -->
+
+    <div class="wishlist-no-results" id="wishlistEmpty">
+
+        <div class="wishlist-no-results-found">
+
+            <div class="wishlist-no-result-information-icon">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </div>
+
+
+            <div class="wishlist-no-result-information">
+
+                <p>
+                    Your Wishlist is Empty
+                </p>
+
+            </div>
+
+
+            <div class="wishlist-no-result-description">
+
+                <p>
+                    Save your favorite destinations here.
+                </p>
+
+            </div>
+
+
+            <div class="wishlist-no-result-button">
+
+                <a href="destinations.html">
+
+                    <button type="button">
+                        Explore Destinations
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="footer-content">
+
+        <footer>
+
+            <div class="footer-content">
+
+
+                <div class="footer-logo">
+
+                    <p>
+                        WanderCompass
+                    </p>
+
+                    <p>
+                        Discover beautiful destinations,
+                        explore unforgettable experiences,
+                        and plan your next journey
+                        with WanderCompass.
+                    </p>
+
+
+                    <div class="footer-social">
+
+                        <ul>
+
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://x.com/" target="_blank">
+                                    <i class="fa-brands fa-square-x-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <p>
+                        Quick Links
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destinations.html">
+                                Destinations
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="wishlist.html">
+                                Wishlist
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-explore">
+
+                    <p>
+                        Explore
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <a href="destinations.html?category=mountains">
+                                Mountains
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destinations.html?category=beaches">
+                                Beaches
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destinations.html?category=nature">
+                                Nature
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destinations.html?category=historical">
+                                Historical
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destinations.html?category=cities">
+                                Cities
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-travel">
+
+                    <p>
+                        Travel With Us
+                    </p>
+
+                    <p>
+                        Start exploring new places
+                        and discover your next
+                        unforgettable adventure.
+                    </p>
+
+
+                    <div class="footer-dest-btn">
+
+                        <a href="destinations.html">
+
+                            <button>
+                                Explore Destinations
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-divider"></div>
+
+
+            <div class="footer-copyright">
+
+                <div class="footer-copyright-content">
+
+                    <p>
+                        &COPY; 2026 WanderCompass.
+                        All rights reserved.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-copyright-link">
+
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                Privacy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Terms
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- IMPORTANT -->
+
+    <script src="./script/wishlist.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1459 @@
+/* =========================================================
+   WANDERCOMPASS
+   RESPONSIVE DESIGN
+   Applies to:
+   index.html
+   destinations.html
+   wishlist.html
+   about.html
+   contact.html
+
+   Does NOT apply to:
+   destination-details.html
+   ========================================================= */
+
+
+/* =========================================================
+   TABLET
+   1024px and below
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    /* ================= NAVBAR ================= */
+
+    nav {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-items {
+        gap: 1.2rem;
+    }
+
+
+    /* ================= HOME HERO ================= */
+
+    .hero-image {
+        height: 80vh;
+    }
+
+    .hero-head p {
+        font-size: 2.6rem;
+    }
+
+    .hero-des p {
+        width: 55%;
+    }
+
+    .airplane-img img {
+        width: 35%;
+        height: 50%;
+    }
+
+
+    /* ================= SEARCH ================= */
+
+    .search-bar input {
+        width: 300px;
+    }
+
+
+    /* ================= DESTINATION CARDS ================= */
+
+    .dest-cards-conainer {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .dest-card {
+        width: 100%;
+    }
+
+
+    /* ================= EXPLORE CATEGORY ================= */
+
+    .explore-container {
+        gap: 20px;
+    }
+
+    .explore-container button {
+        width: 180px;
+    }
+
+
+    /* ================= WHY CHOOSE ================= */
+
+    .why-choose-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .why-choose-card {
+        width: 100%;
+    }
+
+
+    /* ================= CTA ================= */
+
+    .cta-sub-head p,
+    .cta-sub-head-about p {
+        font-size: 38px;
+    }
+
+    .cta-description,
+    .cta-description-about {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+
+    /* ================= ABOUT ================= */
+
+    .whoweare {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .whoweare-content {
+        gap: 25px;
+    }
+
+    .whoweare-image {
+        width: 50%;
+    }
+
+    .whoweare-text {
+        width: 50%;
+    }
+
+    .youcan-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .youcan-explore,
+    .youcan-find,
+    .youcan-save {
+        width: 100%;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact-hero-head p {
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: 2.6rem;
+    }
+
+    .contact-hero-sub-head p {
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+
+    .contact-hero-des p {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        text-align: center;
+    }
+
+    .contact-info {
+        gap: 30px;
+    }
+
+    .getintouch {
+        width: 45%;
+        margin-left: 2%;
+    }
+
+    .contact-form-content {
+        width: 50%;
+    }
+
+
+    /* ================= HELP CARDS ================= */
+
+    .can-help-cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .can-help-card {
+        width: 100%;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer > .footer-content {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        width: 45%;
+    }
+
+    .footer-links,
+    .footer-explore {
+        width: 22%;
+    }
+
+    .footer-travel {
+        width: 45%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   768px and below
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ================= GENERAL ================= */
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 1rem;
+    }
+
+    .nav-items {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+
+    /* ================= HOME HERO ================= */
+
+    .hero-image {
+        height: 75vh;
+        min-height: 520px;
+    }
+
+    .hero-head p {
+        top: 15%;
+        left: 5%;
+        right: 5%;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .hero-des p {
+        top: 30%;
+        left: 8%;
+        width: 84%;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .search-bar {
+        top: 48%;
+        left: 8%;
+        right: 8%;
+        justify-content: center;
+    }
+
+    .search-bar input {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .search-bar button {
+        right: -40px;
+    }
+
+    .hero-btns {
+        top: 65%;
+        left: 5%;
+        right: 5%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-btns button {
+        padding: 0.75rem 1rem;
+    }
+
+    .airplane-img img {
+        display: none;
+    }
+
+
+    /* ================= DESTINATION CARDS ================= */
+
+    .dest-head {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .dest-head p {
+        font-size: 24px;
+    }
+
+    .dest-cards-conainer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .dest-card {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+    /* ================= EXPLORE CATEGORY ================= */
+
+    .explore-head {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .explore-head p {
+        font-size: 24px;
+    }
+
+    .explore-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .explore-container button {
+        width: 100%;
+        padding: 12px;
+        font-size: medium;
+    }
+
+
+    /* ================= WHY CHOOSE ================= */
+
+    .why-choose-header {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .why-choose-head p {
+        font-size: 24px;
+    }
+
+    .why-choose-description {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .why-choose-cards {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .why-choose-card {
+        width: 100%;
+    }
+
+
+    /* ================= CTA ================= */
+
+    .cta,
+    .cta-about {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .cta-sub-head p,
+    .cta-sub-head-about p {
+        font-size: 32px;
+    }
+
+    .cta-description,
+    .cta-description-about {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .cta-button button,
+    .cta-button-about button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* ================= ABOUT HERO ================= */
+
+    .about-hero-head p {
+        left: 5%;
+        right: 5%;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .about-hero-sub-head p {
+        left: 5%;
+        right: 5%;
+        text-align: center;
+    }
+
+    .about-hero-des p {
+        left: 8%;
+        width: 84%;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+
+    /* ================= WHO WE ARE ================= */
+
+    .whoweare {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .whoweare-heading p {
+        font-size: 1.8rem;
+    }
+
+    .whoweare-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .whoweare-image {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .whoweare-image img {
+        width: 70%;
+        max-width: 350px;
+    }
+
+    .whoweare-text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .whoweare-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .whoweare-text p {
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+
+    /* ================= OUR PURPOSE ================= */
+
+    .ourpurpose {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .purpose-head p {
+        font-size: 1.8rem;
+    }
+
+    .purpose-statement p {
+        font-size: 21px;
+    }
+
+    .purpose-des p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* ================= YOU CAN ================= */
+
+    .youcan {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .youcan-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .youcan-explore,
+    .youcan-find,
+    .youcan-save {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+
+    /* ================= DESTINATIONS PAGE ================= */
+
+    .destination-hero-head p {
+        left: 5%;
+        right: 5%;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .destination-hero-sub-head p {
+        left: 5%;
+        right: 5%;
+        text-align: center;
+    }
+
+    .destination-hero-des p {
+        left: 8%;
+        width: 84%;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .search-destination {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .search-container-box {
+        width: 100%;
+    }
+
+    .search-destination-input input {
+        width: 100%;
+    }
+
+    .destination-filter {
+        grid-template-columns: 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 15px;
+    }
+
+    .destination-filter-common {
+        width: 100%;
+    }
+
+
+    /* ================= WISHLIST PAGE ================= */
+
+    .wishlist-hero-head p {
+        left: 5%;
+        right: 5%;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .wishlist-hero-sub-head p {
+        left: 5%;
+        right: 5%;
+        text-align: center;
+    }
+
+    .wishlist-hero-des p {
+        left: 8%;
+        width: 84%;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .wishlist-destination-count {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .wishlist-destination-count p {
+        font-size: 18px;
+    }
+
+    .wishlist-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ================= CONTACT HERO ================= */
+
+    .contact-hero-head p {
+        top: 30%;
+        left: 5%;
+        right: 5%;
+        transform: none;
+        white-space: normal;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .contact-hero-sub-head p {
+        top: 15%;
+        left: 5%;
+        right: 5%;
+        transform: none;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .contact-hero-des p {
+        top: 55%;
+        left: 8%;
+        width: 84%;
+        transform: none;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+
+    /* ================= CONTACT INFORMATION ================= */
+
+    .contact-info {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .getintouch {
+        width: 100%;
+        margin: 0;
+    }
+
+    .getintouch-Description {
+        width: 100%;
+    }
+
+    .contact-form-content {
+        width: 100%;
+    }
+
+    .contact-form-item input,
+    .contact-form-item textarea,
+    .contact-form-button button {
+        width: 100%;
+    }
+
+    .contact-form-button button {
+        margin-left: 0;
+    }
+
+
+    /* ================= GOOGLE MAP ================= */
+
+    .find-us {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .find-us-map iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+
+    /* ================= HELP SECTION ================= */
+
+    .can-help {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .can-help-header p {
+        font-size: 1.5rem;
+    }
+
+    .can-help-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .can-help-card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer > .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-explore,
+    .footer-travel {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .footer-logo {
+        text-align: left;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px and below
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* ================= NAVBAR ================= */
+
+    nav {
+        padding: 0.8rem;
+    }
+
+    .nav-logo p {
+        font-size: 1.3rem;
+    }
+
+    .nav-items {
+        gap: 10px 14px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    /* ================= HOME HERO ================= */
+
+    .hero-image {
+        min-height: 560px;
+    }
+
+    .hero-head p {
+        font-size: 1.8rem;
+    }
+
+    .hero-des p {
+        font-size: 0.9rem;
+    }
+
+    .search-bar {
+        left: 5%;
+        right: 5%;
+    }
+
+    .search-bar input {
+        max-width: none;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        top: 65%;
+    }
+
+    .hero-btns a,
+    .hero-btns button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+
+    /* ================= DESTINATION CARDS ================= */
+
+    .dest-card-img {
+        height: 190px;
+    }
+
+
+    /* ================= EXPLORE ================= */
+
+    .explore-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ================= WHY CHOOSE ================= */
+
+    .why-choose-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .why-choose-card {
+        min-height: 220px;
+    }
+
+
+    /* ================= CTA ================= */
+
+    .cta-sub-head p,
+    .cta-sub-head-about p {
+        font-size: 27px;
+    }
+
+    .cta-description p,
+    .cta-description-about p {
+        font-size: 14px;
+    }
+
+
+    /* ================= ABOUT ================= */
+
+    .about-hero-head p,
+    .destination-hero-head p,
+    .wishlist-hero-head p,
+    .contact-hero-head p {
+        font-size: 1.8rem;
+    }
+
+    .whoweare-image img {
+        width: 85%;
+    }
+
+    .whoweare-text p {
+        font-size: 15px;
+    }
+
+    .purpose-statement p {
+        font-size: 19px;
+    }
+
+
+    /* ================= DESTINATIONS ================= */
+
+    .destination-filter {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+    /* ================= WISHLIST ================= */
+
+    .wishlist-destination-count p {
+        font-size: 16px;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact-hero-des p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form-item input,
+    .contact-form-item textarea {
+        font-size: 14px;
+    }
+
+    .find-us-map iframe {
+        height: 300px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+
+
+/* =========================================================
+   WANDERCOMPASS - DESTINATIONS PAGE RESPONSIVE
+   This file only changes layout/sizing for smaller screens.
+   No colors or images are changed.
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    /* ================= NAVBAR ================= */
+
+    nav {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-items {
+        gap: 1.2rem;
+    }
+
+    .nav-logo p {
+        font-size: 1.3rem;
+    }
+
+
+    /* ================= DESTINATION HERO ================= */
+
+    .destination-hero-image {
+        height: 380px;
+    }
+
+    .destination-hero-head p {
+        left: 50%;
+        top: 30%;
+
+        width: 90%;
+
+        transform: translateX(-50%);
+
+        text-align: center;
+
+        font-size: 2.5rem;
+    }
+
+    .destination-hero-sub-head p {
+        left: 50%;
+
+        width: 90%;
+
+        transform: translateX(-50%);
+
+        text-align: center;
+    }
+
+    .destination-hero-des p {
+        left: 50%;
+
+        width: 80%;
+
+        transform: translateX(-50%);
+
+        text-align: center;
+
+        font-size: 1.1rem;
+
+        line-height: 1.6;
+    }
+
+
+    /* ================= SEARCH ================= */
+
+    .search-destination {
+        margin: 0 5%;
+    }
+
+    .search-container-box {
+        height: 220px;
+    }
+
+    .search-destination-input {
+        width: 90%;
+    }
+
+    .search-destination-input input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .search-destination-input input::placeholder {
+        font-size: 17px;
+    }
+
+
+    /* ================= FILTER ================= */
+
+    .destination-filter {
+        flex-wrap: wrap;
+
+        gap: 25px;
+
+        justify-content: center;
+
+        margin-bottom: 5%;
+    }
+
+    .destination-filter-common {
+        width: 28%;
+        min-width: 200px;
+    }
+
+    .filter-box select {
+        width: 100%;
+    }
+
+
+    /* ================= DESTINATION CARDS ================= */
+
+    .dest-cards-conainer {
+        margin: 0 5%;
+
+        gap: 20px;
+    }
+
+    .dest-card {
+        width: 280px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer {
+        margin: 3% 4%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ================= NAVBAR ================= */
+
+    nav {
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 1rem;
+    }
+
+    .nav-logo p {
+        font-size: 1.3rem;
+
+        text-align: center;
+    }
+
+    .nav-items {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 18px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    /* ================= DESTINATION HERO ================= */
+
+    .destination-hero-image {
+        height: 330px;
+    }
+
+    .destination-hero-head p {
+        top: 34%;
+
+        width: 90%;
+
+        font-size: 2.2rem;
+
+        line-height: 1.2;
+    }
+
+    .destination-hero-sub-head p {
+        top: 15%;
+
+        width: 90%;
+
+        font-size: 0.9rem;
+
+        line-height: 1.5;
+    }
+
+    .destination-hero-des p {
+        top: 60%;
+
+        width: 88%;
+
+        font-size: 1rem;
+
+        line-height: 1.5;
+    }
+
+
+    /* ================= SEARCH ================= */
+
+    .search-destination {
+        margin: 0 5%;
+    }
+
+    .search-container-box {
+        height: auto;
+
+        padding: 40px 0 30px;
+    }
+
+    .search-destination-input {
+        width: 100%;
+
+        height: auto;
+    }
+
+    .search-destination-input input {
+        width: 100%;
+
+        padding: 16px;
+
+        font-size: 15px;
+    }
+
+    .search-destination-input input::placeholder {
+        font-size: 15px;
+    }
+
+
+    /* ================= FILTER ================= */
+
+    .destination-filter {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 18px;
+
+        margin: 0 5% 30px;
+    }
+
+    .destination-filter-common {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+    .filter-head p {
+        font-size: 15px;
+
+        margin-bottom: 7px;
+    }
+
+    .filter-box select {
+        width: 100%;
+
+        padding: 11px;
+    }
+
+
+    /* ================= DESTINATION HEADING ================= */
+
+    .dest-head {
+        margin: 5%;
+
+        text-align: center;
+    }
+
+    .dest-head p {
+        font-size: 25px;
+    }
+
+
+    /* ================= DESTINATION CARDS ================= */
+
+    .dest-cards-conainer {
+        margin: 0 5%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .dest-card {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+    .dest-card-img {
+        height: 210px;
+    }
+
+
+    /* ================= NO RESULTS ================= */
+
+    .no-results-found {
+        margin: 5%;
+    }
+
+    .no-result-information p {
+        font-size: 21px;
+
+        text-align: center;
+    }
+
+    .no-result-description p {
+        font-size: 15px;
+
+        text-align: center;
+    }
+
+    .no-result-button {
+        width: 80%;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer {
+        margin: 4% 5%;
+    }
+
+    footer > .footer-content {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-explore,
+    .footer-travel {
+        width: 100%;
+
+        padding-left: 0;
+    }
+
+    .footer-logo p,
+    .footer-links p,
+    .footer-explore p,
+    .footer-travel p {
+        text-align: left;
+    }
+
+    .footer-social ul {
+        justify-content: flex-start;
+    }
+
+    .footer-copyright {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* ================= NAVBAR ================= */
+
+    nav {
+        padding: 0.8rem;
+
+        gap: 10px;
+    }
+
+    .nav-logo p {
+        font-size: 1.15rem;
+    }
+
+    .nav-items {
+        gap: 8px 12px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+
+    /* ================= DESTINATION HERO ================= */
+
+    .destination-hero-image {
+        height: 300px;
+    }
+
+    .destination-hero-head p {
+        top: 38%;
+
+        width: 92%;
+
+        font-size: 1.8rem;
+
+        line-height: 1.2;
+    }
+
+    .destination-hero-sub-head p {
+        top: 12%;
+
+        width: 92%;
+
+        font-size: 0.8rem;
+    }
+
+    .destination-hero-des p {
+        top: 62%;
+
+        width: 90%;
+
+        font-size: 0.9rem;
+
+        line-height: 1.45;
+    }
+
+
+    /* ================= SEARCH ================= */
+
+    .search-container-box {
+        padding: 35px 0 25px;
+    }
+
+    .search-destination-input input {
+        padding: 14px;
+
+        font-size: 14px;
+    }
+
+    .search-destination-input input::placeholder {
+        font-size: 14px;
+    }
+
+
+    /* ================= FILTER ================= */
+
+    .destination-filter {
+        margin: 0 5% 25px;
+
+        gap: 15px;
+    }
+
+    .filter-head p {
+        font-size: 14px;
+    }
+
+    .filter-box select {
+        font-size: 13px;
+
+        padding: 10px;
+    }
+
+
+    /* ================= DESTINATION HEADING ================= */
+
+    .dest-head {
+        margin: 8% 5% 5%;
+    }
+
+    .dest-head p {
+        font-size: 23px;
+    }
+
+
+    /* ================= DESTINATION CARDS ================= */
+
+    .dest-cards-conainer {
+        margin: 0 5%;
+
+        gap: 18px;
+    }
+
+    .dest-card {
+        width: 100%;
+
+        max-width: none;
+    }
+
+    .dest-card-img {
+        height: 190px;
+    }
+
+    .dest-card-head p {
+        font-size: 18px;
+    }
+
+    .dest-card-btn button {
+        width: 140px;
+
+        font-size: 14px;
+    }
+
+
+    /* ================= NO RESULTS ================= */
+
+    .no-results-found {
+        margin: 8% 5%;
+
+        padding: 20px 15px;
+    }
+
+    .no-result-information-icon {
+        width: 60px;
+        height: 60px;
+
+        font-size: 30px;
+    }
+
+    .no-result-information p {
+        font-size: 18px;
+    }
+
+    .no-result-description p {
+        font-size: 14px;
+    }
+
+    .no-result-button {
+        width: 100%;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer {
+        margin: 5%;
+    }
+
+    .footer-logo p:nth-child(1) {
+        font-size: 21px;
+    }
+
+    .footer-copyright-content p {
+        font-size: 13px;
+
+        text-align: center;
+    }
+
+    .footer-copyright-link ul {
+        justify-content: center;
+    }
+
+}

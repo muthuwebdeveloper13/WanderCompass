@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderCompass - Contact</title>
+    <link rel="shortcut icon" href="./assets/icons/plane-departure-solid-full.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!-- page 1 -->
+    <div class="container">
+        <nav>
+            <div class="nav-logo">
+                <p>WanderCompass</p>
+            </div>
+            <div class="nav-items">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="wishlist.html" class="nav-link">wishlist</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+        <div class="contact-hero-image">
+            <div class="contact-hero-head">
+                <p>GET IN TOUCH</p>
+            </div>
+            <div class="contact-hero-sub-head">
+                <p><a href="index.html">Home</a> / <a href="contact.html">Contact Us</a></p>
+            </div>
+            <div class="contact-hero-des">
+                <p>Have a question or feedback? We'd love to hear from you.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact form -->
+    <div class="contact-info">
+        <div class="getintouch">
+            <div class="getintouch-Heading">
+                <p>Get in Touch</p>
+            </div>
+            <div class="getintouch-Description">
+                <p>Have questions, suggestions, or feedback? Feel free to reach out to us.</p>
+            </div>
+            <div class="getintouch-Contact-details">
+                <div class="Contact-details-email">
+                    <div class="Contact-details-head">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Email</p>
+                    </div>
+                    <p>hello@wandercompass.com</p>
+                </div>
+                <div class="Contact-details-phone">
+                    <div class="Contact-details-head">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Phone</p>
+                    </div>
+                    <p>+91 98765 43210</p>
+                </div>
+                <div class="Contact-details-location">
+                    <div class="Contact-details-head">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <p>Location</p>
+                    </div>
+                    <p>Tamil Nadu, India</p>
+                </div>
+            </div>
+            <div class="getintouch-Social-media">
+                <div class="Contact-details-head">
+                    <p>Social media</p>
+                </div>
+                <div class="getintouch-Social-media-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form-content">
+            <div class="contact-form-heading">
+                <p>Send a Message</p>
+            </div>
+            <div class="contact-form">
+                <form id="contact-form-submit">
+                    <div class="contact-form-item">
+                        <label for="name">Name: <span class="contact-require">*</span></label>
+                        <input type="text" name="name" id="contact-form-name" placeholder="Enter your Name">
+                        <p class="contact-form-error" id="contact-form-error-name"></p>
+                    </div>
+                    <div class="contact-form-item">
+                        <label for="email">Email: <span class="contact-require">*</span></label>
+                        <input type="email" name="email" id="contact-form-email" placeholder="Enter your email">
+                        <p class="contact-form-error" id="contact-form-error-email"></p>
+                    </div>
+                    <div class="contact-form-item">
+                        <label for="subject">Subject: <span class="contact-require">*</span></label>
+                        <input type="text" name="subject" id="contact-form-subject" placeholder="Enter Subject">
+                        <p class="contact-form-error" id="contact-form-error-subject">Please Enter Your Subject.</p>
+                    </div>
+                    <div class="contact-form-item">
+                        <label for="message">Message: <span class="contact-require">*</span></label>
+                        <textarea name="message" id="contact-form-message"
+                            placeholder="Enter your Message . . ."></textarea>
+                        <p class="contact-form-error" id="contact-form-error-message">Please Enter Your Message.</p>
+                    </div>
+                    <div class="contact-form-button">
+                        <button type="submit">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- google map -->
+
+    <div class="find-us">
+        <div class="find-us-head">
+            <p>FIND US</p>
+        </div>
+        <div class="find-us-subhead">
+            <p>Visit WanderCompass</p>
+        </div>
+        <div class="find-us-map">
+            <iframe src="https://www.google.com/maps?q=Namakkal,Tamil+Nadu,India&output=embed" width="100%" height="400"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <!-- <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.396688482383!2d78.16565927409351!3d11.220074750855785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babcfd7d684a007%3A0x8b370e38324200b2!2sNamakkal%20Bus%20Stand!5e1!3m2!1sen!2sin!4v1789480653139!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
+        </div>
+    </div>
+
+
+    <!-- how can help page -->
+
+    <div class="can-help">
+        <div class="can-help-header">
+            <p>How Can We Help?</p>
+        </div>
+        <div class="can-help-cards">
+            <div class="can-help-card can-help-card-1">
+                <i class="fa-solid fa-question"></i>
+                <p>Have a question about a destination?
+                    Send us your message and we'll be happy to help.</p>
+            </div>
+            <div class="can-help-card can-help-card-2">
+                <i class="fa-solid fa-message"></i>
+                <p>Tell us about your experience and help us improve WanderCompass.</p>
+            </div>
+            <div class="can-help-card can-help-card-3">
+                <i class="fa-solid fa-lightbulb"></i>
+                <p>Share your ideas and suggestions for making WanderCompass better.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- page 6 Footer -->
+    <div class="footer-content">
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <p>WanderCompass</p>
+                    <p>Discover beautiful destinations, explore unforgettable experiences, and plan your next journey
+                        with
+                        WanderCompass.</p>
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://x.com/" target="_blank">
+                                    <i class="fa-brands fa-square-x-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <p>Quick Links</p>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-explore">
+                    <p>Explore</p>
+                    <ul>
+                        <li><a href="destinations.html?category=mountains">Mountains</a></li>
+                        <li><a href="destinations.html?category=beaches">Beaches</a></li>
+                        <li><a href="destinations.html?category=nature">Nature</a></li>
+                        <li><a href="destinations.html?category=historical">Historical</a></li>
+                        <li><a href="destinations.html?category=cities">Cities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-travel">
+                    <p>Travel With Us</p>
+                    <p>Start exploring new places and discover your next unforgettable adventure.</p>
+                    <div class="footer-dest-btn">
+                        <a href="destinations.html"><button>Explore Destinations</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-content">
+                    <p>&COPY; 2026 WanderCompass. All rights reserved.</p>
+                </div>
+                <div class="footer-copyright-link">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script/contact.js"></script>
+</body>
+
+</html>

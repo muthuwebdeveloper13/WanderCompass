@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Destination Details | WanderCompass</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/destination-details.css">
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+
+    <header class="navbar">
+
+        <div class="container navbar-container">
+
+            <a href="index.html" class="logo">
+                WanderCompass
+            </a>
+
+            <nav class="nav-menu">
+
+                <a href="index.html">Home</a>
+
+                <a href="destinations.html" class="active">
+                    Destinations
+                </a>
+
+                <a href="wishlist.html">
+                    Wishlist
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==================== MAIN ==================== -->
+
+    <main>
+
+        <!-- ==================== DESTINATION HERO ==================== -->
+
+        <section class="destination-hero">
+
+            <div class="container hero-container">
+
+                <!-- Main Image -->
+
+                <div class="main-image-container">
+
+                    <img id="mainImage"
+                        src=""
+                        alt="Destination image">
+
+                </div>
+
+
+                <!-- Destination Information -->
+
+                <div class="destination-info">
+
+                    <p class="destination-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="location"></span>
+                    </p>
+
+                    <h1 id="destinationName">
+                        Destination Name
+                    </h1>
+
+                    <div class="destination-meta">
+
+                        <span class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span id="rating"></span>
+                        </span>
+
+                        <span class="category" id="category">
+                            Category
+                        </span>
+
+                        <span class="budget" id="budget">
+                            Budget
+                        </span>
+
+                    </div>
+
+
+                    <p class="short-description" id="shortDescription">
+                    </p>
+
+
+                    <div class="price-duration">
+
+                        <div class="price-box">
+
+                            <span class="info-label">
+                                Estimated Price
+                            </span>
+
+                            <span class="price" id="price">
+                            </span>
+
+                        </div>
+
+
+                        <div class="duration-box">
+
+                            <span class="info-label">
+                                Recommended Duration
+                            </span>
+
+                            <span class="duration" id="duration">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="wishlist-btn" id="wishlistBtn">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <span>
+                            Add to Wishlist
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== QUICK INFORMATION ==================== -->
+
+        <section class="quick-info-section">
+
+            <div class="container">
+
+                <div class="quick-info">
+
+                    <div class="quick-info-item">
+
+                        <i class="fa-solid fa-mountain-sun"></i>
+
+                        <div>
+                            <span class="quick-label">
+                                Category
+                            </span>
+
+                            <span class="quick-value"
+                                id="quickCategory">
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-info-item">
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                        <div>
+                            <span class="quick-label">
+                                Budget
+                            </span>
+
+                            <span class="quick-value"
+                                id="quickBudget">
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-info-item">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <div>
+                            <span class="quick-label">
+                                Duration
+                            </span>
+
+                            <span class="quick-value"
+                                id="quickDuration">
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-info-item">
+
+                        <i class="fa-solid fa-sun"></i>
+
+                        <div>
+                            <span class="quick-label">
+                                Best Time
+                            </span>
+
+                            <span class="quick-value"
+                                id="bestTime">
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== ABOUT DESTINATION ==================== -->
+
+        <section class="about-destination section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>
+                        DISCOVER THE DESTINATION
+                    </span>
+
+                    <h2>
+                        About <span id="aboutName"></span>
+                    </h2>
+
+                </div>
+
+
+                <div class="long-description"
+                    id="longDescription">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== ATTRACTIONS ==================== -->
+
+        <section class="attractions-section section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>
+                        PLACES TO VISIT
+                    </span>
+
+                    <h2>
+                        Top Attractions
+                    </h2>
+
+                </div>
+
+
+                <div class="attractions-grid"
+                    id="attractionsContainer">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== THINGS TO DO ==================== -->
+
+        <section class="activities-section section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>
+                        EXPERIENCES
+                    </span>
+
+                    <h2>
+                        Things to Do
+                    </h2>
+
+                </div>
+
+
+                <div class="activities-list"
+                    id="activitiesContainer">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== GALLERY ==================== -->
+
+        <section class="gallery-section section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>
+                        EXPLORE THROUGH IMAGES
+                    </span>
+
+                    <h2>
+                        Travel Gallery
+                    </h2>
+
+                </div>
+
+
+                <div class="gallery-grid"
+                    id="galleryContainer">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== TRAVEL TIPS ==================== -->
+
+        <section class="tips-section section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>
+                        TRAVEL SMART
+                    </span>
+
+                    <h2>
+                        Travel Tips
+                    </h2>
+
+                </div>
+
+
+                <div class="tips-box"
+                    id="tipsContainer">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== RELATED DESTINATIONS ==================== -->
+
+        <section class="related-section section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>
+                        KEEP EXPLORING
+                    </span>
+
+                    <h2>
+                        You May Also Like
+                    </h2>
+
+                </div>
+
+
+                <div class="related-grid"
+                    id="relatedContainer">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <h3>
+                    WanderCompass
+                </h3>
+
+                <p>
+                    Discover beautiful destinations, explore
+                    unforgettable experiences, and plan your
+                    next journey with WanderCompass.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://x.com/" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">Home</a>
+
+                <a href="destinations.html">
+                    Destinations
+                </a>
+
+                <a href="wishlist.html">
+                    Wishlist
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="destinations.html?category=mountains">
+                    Mountains
+                </a>
+
+                <a href="destinations.html?category=beaches">
+                    Beaches
+                </a>
+
+                <a href="destinations.html?category=nature">
+                    Nature
+                </a>
+
+                <a href="destinations.html?category=historical">
+                    Historical
+                </a>
+
+                <a href="destinations.html?category=cities">
+                    Cities
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 WanderCompass. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./script/destination-details.js"></script>
+
+</body>
+
+</html>

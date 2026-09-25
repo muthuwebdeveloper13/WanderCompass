@@ -1,0 +1,951 @@
+/* =========================================================
+   GENERAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    color: #24302B;
+    background-color: #F7F3E8;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E5E5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #164A41;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #24302B;
+
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #164A41;
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: none;
+
+    font-size: 22px;
+    color: #164A41;
+}
+
+
+/* =========================================================
+   DESTINATION HERO
+========================================================= */
+
+.destination-hero {
+    padding: 70px 0;
+    background-color: #FFFFFF;
+}
+
+.hero-container {
+    display: grid;
+
+    grid-template-columns: 1.1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.main-image-container {
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    height: 500px;
+}
+
+.main-image-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Destination information */
+
+.destination-location {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #4F772D;
+
+    margin-bottom: 12px;
+}
+
+.destination-location i {
+    margin-right: 6px;
+}
+
+.destination-info h1 {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 48px;
+    line-height: 1.15;
+
+    color: #164A41;
+
+    margin-bottom: 20px;
+}
+
+.destination-meta {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+.rating,
+.category,
+.budget {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+}
+
+.rating {
+    color: #FFFFFF;
+    background-color: #E9B44C;
+}
+
+.rating i {
+    margin-right: 4px;
+}
+
+.category {
+    color: #164A41;
+    background-color: #DDEBE7;
+}
+
+.budget {
+    color: #4F772D;
+    background-color: #E5EEDC;
+}
+
+.short-description {
+    max-width: 560px;
+
+    font-size: 16px;
+
+    color: #59635E;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* Price and duration */
+
+.price-duration {
+    display: flex;
+
+    gap: 40px;
+
+    margin-bottom: 30px;
+}
+
+.info-label {
+    display: block;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #777;
+
+    margin-bottom: 5px;
+}
+
+.price {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    color: #164A41;
+}
+
+.duration {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #24302B;
+}
+
+
+/* Wishlist button */
+
+.wishlist-btn {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 8px;
+
+    padding: 13px 22px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #164A41;
+    color: #FFFFFF;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.wishlist-btn:hover {
+    background-color: #4F772D;
+}
+
+.wishlist-btn.saved {
+    background-color: #E76F51;
+}
+
+
+/* =========================================================
+   QUICK INFORMATION
+========================================================= */
+
+.quick-info-section {
+    padding: 35px 0;
+
+    background-color: #F7F3E8;
+}
+
+.quick-info {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.quick-info-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background-color: #FFFFFF;
+
+    border-radius: 10px;
+}
+
+.quick-info-item > i {
+    font-size: 22px;
+
+    color: #2A9D8F;
+}
+
+.quick-label {
+    display: block;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #777;
+
+    margin-bottom: 3px;
+}
+
+.quick-value {
+    display: block;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #164A41;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading > span {
+    display: block;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #4F772D;
+
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    color: #164A41;
+}
+
+
+/* =========================================================
+   ABOUT DESTINATION
+========================================================= */
+
+.about-destination {
+    background-color: #FFFFFF;
+}
+
+.long-description {
+    max-width: 900px;
+}
+
+.long-description p {
+    font-size: 16px;
+
+    color: #59635E;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   ATTRACTIONS
+========================================================= */
+
+.attractions-section {
+    background-color: #F7F3E8;
+}
+
+.attractions-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.attraction-card {
+    padding: 30px;
+
+    background-color: #FFFFFF;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    border: 1px solid #E8E5DB;
+
+    transition: 0.3s;
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.attraction-card i {
+    font-size: 25px;
+
+    color: #2A9D8F;
+
+    margin-bottom: 15px;
+}
+
+.attraction-card h3 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    color: #164A41;
+}
+
+
+/* =========================================================
+   ACTIVITIES
+========================================================= */
+
+.activities-section {
+    background-color: #FFFFFF;
+}
+
+.activities-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    max-width: 800px;
+}
+
+.activity-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 18px;
+
+    background-color: #F7F3E8;
+
+    border-radius: 8px;
+}
+
+.activity-item i {
+    color: #4F772D;
+
+    font-size: 15px;
+}
+
+.activity-item span {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery-section {
+    background-color: #F7F3E8;
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.gallery-item {
+    height: 250px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   TRAVEL TIPS
+========================================================= */
+
+.tips-section {
+    background-color: #FFFFFF;
+}
+
+.tips-box {
+    max-width: 800px;
+
+    padding: 25px 30px;
+
+    background-color: #F7F3E8;
+
+    border-left: 4px solid #4F772D;
+
+    border-radius: 8px;
+}
+
+.tip-item {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+}
+
+.tip-item:last-child {
+    margin-bottom: 0;
+}
+
+.tip-item i {
+    color: #4F772D;
+
+    margin-top: 4px;
+}
+
+.tip-item span {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   RELATED DESTINATIONS
+========================================================= */
+
+.related-section {
+    background-color: #F7F3E8;
+}
+
+.related-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.related-card {
+    overflow: hidden;
+
+    background-color: #FFFFFF;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.related-card-image {
+    height: 220px;
+
+    overflow: hidden;
+}
+
+.related-card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.related-card-content {
+    padding: 20px;
+}
+
+.related-card-content h3 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #164A41;
+
+    margin-bottom: 5px;
+}
+
+.related-location {
+    font-size: 14px;
+
+    color: #777;
+
+    margin-bottom: 15px;
+}
+
+.related-btn {
+    display: inline-block;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #164A41;
+}
+
+.related-btn:hover {
+    color: #4F772D;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background-color: #164A41;
+
+    color: #F7F3E8;
+}
+
+.footer-container {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 60px;
+
+    padding: 65px 0;
+}
+
+.footer-brand h3 {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 28px;
+
+    color: #E8C07D;
+
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    max-width: 400px;
+
+    font-size: 14px;
+
+    color: #D9E2DC;
+
+    line-height: 1.8;
+}
+
+.social-icons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFFFFF;
+
+    color: #164A41;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #E8C07D;
+}
+
+.footer-column h4 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 16px;
+
+    color: #E8C07D;
+
+    margin-bottom: 18px;
+}
+
+.footer-column a {
+    display: block;
+
+    font-size: 14px;
+
+    color: #D9E2DC;
+
+    margin-bottom: 10px;
+
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #E8C07D;
+}
+
+.footer-bottom {
+    padding: 18px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-bottom p {
+    font-size: 13px;
+
+    color: #D9E2DC;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        background-color: #FFFFFF;
+
+        border-top: 1px solid #E5E5E5;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .main-image-container {
+        height: 400px;
+    }
+
+
+    .quick-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .attractions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+
+    .destination-hero {
+        padding: 40px 0;
+    }
+
+
+    .main-image-container {
+        height: 300px;
+    }
+
+
+    .destination-info h1 {
+        font-size: 38px;
+    }
+
+
+    .short-description {
+        font-size: 15px;
+    }
+
+
+    .price-duration {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .quick-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .activities-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+
+
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WanderCompass - Destinations</title>
+
+    <link rel="shortcut icon"
+        href="./assets/icons/plane-departure-solid-full.svg"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <style>
+        /* Wishlist heart */
+
+        .dest-card-head {
+            position: relative;
+        }
+
+        .wishlist-heart {
+            position: absolute;
+            top: 25%;
+            right: 1%;
+
+            font-size: 20px !important;
+            cursor: pointer;
+
+            color: #24302B;
+
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .wishlist-heart:hover {
+            color: #ff0000;
+            transform: scale(1.15);
+        }
+
+        .wishlist-heart.wishlist-active {
+            color: #ff0000;
+        }
+
+        .wishlist-heart.wishlist-active:hover {
+            color: #ff0000;
+            transform: scale(1.15);
+        }
+
+        .dest-card-btn a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <div class="container">
+
+        <nav>
+
+            <div class="nav-logo">
+                <p>WanderCompass</p>
+            </div>
+
+            <div class="nav-items">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="destinations.html" class="nav-link">
+                    Destinations
+                </a>
+
+                <a href="wishlist.html" class="nav-link">
+                    Wishlist
+                </a>
+
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- ================= HERO ================= -->
+
+        <div class="destination-hero-image">
+
+            <div class="destination-hero-head">
+                <p>EXPLORE THE WORLD</p>
+            </div>
+
+            <div class="destination-hero-sub-head">
+
+                <p>
+                    <a href="index.html">Home</a>
+                    /
+                    <a href="destinations.html">
+                        Explore Destinations
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="destination-hero-des">
+
+                <p>
+                    Discover beautiful places, explore new experiences,
+                    and find the perfect destination for your next journey.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <div class="search-destination">
+
+        <div class="search-container-box">
+
+            <div class="search-destination-input">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by destination, location or category...">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FILTER ================= -->
+
+    <div class="destination-filter">
+
+        <div class="destination-filter-common destination-filter-category">
+
+            <div class="filter-head">
+                <p>Category</p>
+            </div>
+
+            <div class="filter-box">
+
+                <select id="categoryFilter">
+
+                    <option value="">All Categories</option>
+                    <option value="Mountain">Mountain</option>
+                    <option value="Beach">Beach</option>
+                    <option value="Nature">Nature</option>
+                    <option value="Historical">Historical</option>
+                    <option value="City">City</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="destination-filter-common destination-filter-budget">
+
+            <div class="filter-head">
+                <p>Budget</p>
+            </div>
+
+            <div class="filter-box">
+
+                <select id="budgetFilter">
+
+                    <option value="">All Budgets</option>
+                    <option value="Budget">Budget</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Luxury">Luxury</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="destination-filter-common destination-filter-sort">
+
+            <div class="filter-head">
+                <p>Sort By</p>
+            </div>
+
+            <div class="filter-box">
+
+                <select id="sortFilter">
+
+                    <option value="">Recommended</option>
+                    <option value="rating-high">Rating: High to Low</option>
+                    <option value="rating-low">Rating: Low to High</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name: A-Z</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= DESTINATIONS ================= -->
+
+    <div class="popular-destinations">
+
+        <div class="dest-head" id="destinationHeading">
+            <p>All Destinations</p>
+        </div>
+
+        <div
+            class="dest-cards-conainer"
+            id="destinationCards">
+
+            <!-- JavaScript creates cards here -->
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= NO RESULTS ================= -->
+
+    <div class="no-results" id="noResults">
+
+        <div class="no-results-found">
+
+            <div class="no-result-information-icon">
+
+                <i class="fa-solid fa-exclamation"></i>
+
+            </div>
+
+            <div class="no-result-information">
+
+                <p>No destinations found</p>
+
+            </div>
+
+            <div class="no-result-description">
+
+                <p>
+                    Try changing your search or filters.
+                </p>
+
+            </div>
+
+            <div class="no-result-button">
+
+                <button
+                    type="button"
+                    id="clearFilters">
+
+                    Clear Filters
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="footer-content">
+
+        <footer>
+
+            <div class="footer-content">
+
+                <div class="footer-logo">
+
+                    <p>WanderCompass</p>
+
+                    <p>
+                        Discover beautiful destinations,
+                        explore unforgettable experiences,
+                        and plan your next journey
+                        with WanderCompass.
+                    </p>
+
+                    <div class="footer-social">
+
+                        <ul>
+
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href=" https://x.com/" target="_blank">
+                                    <i class="fa-brands fa-square-x-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <p>Quick Links</p>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destinations.html">
+                                Destinations
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="wishlist.html">
+                                Wishlist
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-explore">
+
+                    <p>Explore</p>
+
+                    <ul>
+
+                        <li>
+                            <a href="destinations.html?category=mountains">
+                                Mountains
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destinations.html?category=beaches">
+                                Beaches
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destinations.html?category=nature">
+                                Nature
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destinations.html?category=historical">
+                                Historical
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destinations.html?category=cities">
+                                Cities
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-travel">
+
+                    <p>Travel With Us</p>
+
+                    <p>
+                        Start exploring new places and discover
+                        your next unforgettable adventure.
+                    </p>
+
+                    <div class="footer-dest-btn">
+
+                        <a href="destinations.html">
+
+                            <button>
+                                Explore Destinations
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-divider"></div>
+
+
+            <div class="footer-copyright">
+
+                <div class="footer-copyright-content">
+
+                    <p>
+                        &COPY; 2026 WanderCompass.
+                        All rights reserved.
+                    </p>
+
+                </div>
+
+                <div class="footer-copyright-link">
+
+                    <ul>
+
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- IMPORTANT -->
+    <script src="./script/wishlist.js"></script>
+
+</body>
+
+</html>

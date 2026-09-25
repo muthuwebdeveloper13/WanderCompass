@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderCompass</title>
+    <link rel="shortcut icon" href="./assets/icons/plane-departure-solid-full.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!-- page 1 -->
+    <div class="container">
+        <nav>
+            <div class="nav-logo">
+                <p>WanderCompass</p>
+            </div>
+            <div class="nav-items">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="wishlist.html" class="nav-link">wishlist</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+        <div class="hero-image">
+            <div class="hero-head">
+                <p>Your Journey Starts Here</p>
+            </div>
+            <div class="hero-des">
+                <p>From peaceful mountains to vibrant cities and stunning beaches, discover destinations that inspire
+                    your next adventure with WanderCompass.</p>
+            </div>
+            <!-- <div class="search-bar">
+                <input type="text" placeholder="Search Destinations">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div> -->
+            <div class="hero-btns">
+                <a href="destinations.html"><button>Explore Destinations</button></a>
+                <a href="wishlist.html"><button>View Wishlist</button></a>
+                <a href="destinations.html"><span><i class="fa-solid fa-magnifying-glass"></i></span></a>
+            </div>
+            <div class="airplane-img">
+                <img src="./assets/icons/airplane-route.png" alt="Airplane Route">
+            </div>
+        </div>
+    </div>
+    <!-- second page popular destinations -->
+    <div class="popular-destinations">
+        <div class="dest-head">
+            <p>Popular Destinations</p>
+        </div>
+        <div class="dest-cards-conainer">
+            <!-- .dest-card*6>img[src="./assets/destinations/" alt="Destination card"]+(.dest-card-head>p)+(.dest-card-location>p)+(.dest-card-catogory>span+span)+(.dest-card-budget>p)+.dest-card-btn>button -->
+            <!-- card 1 -->
+            <div class="dest-card">
+                <div class="dest-card-img">
+                    <img src="./assets/destinations/ooty-main.jpg" alt="Destination card">
+                </div>
+                <div class="dest-card-head">
+                    <p>Ooty</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="dest-card-location">
+                    <p>Tamil Nadu, India</p>
+                </div>
+                <div class="dest-card-catogory">
+                    <span>Mountain</span>
+                    <span><i class="fa-solid fa-star"></i> 4.8</span>
+                </div>
+                <div class="dest-card-budget">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>10000 - <i
+                            class="fa-solid fa-indian-rupee-sign"></i>12000</p>
+                </div>
+                <div class="dest-card-btn">
+                    <a href="destination-details.html?id=1">
+                        <button type="button">
+                            View Details
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="dest-card">
+                <div class="dest-card-img">
+                    <img src="./assets/destinations/munnar-main.jpg" alt="Destination card">
+                </div>
+                <div class="dest-card-head">
+                    <p>Munnar</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="dest-card-location">
+                    <p>Kerala, India</p>
+                </div>
+                <div class="dest-card-catogory">
+                    <span>Nature</span>
+                    <span><i class="fa-solid fa-star"></i>4.7</span>
+                </div>
+                <div class="dest-card-budget">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>12000 - <i
+                            class="fa-solid fa-indian-rupee-sign"></i>15000</p>
+                </div>
+                <div class="dest-card-btn">
+                    <a href="destination-details.html?id=2">
+                        <button type="button">
+                            View Details
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="dest-card">
+                <div class="dest-card-img">
+                    <img src="./assets/destinations/goa-main.jpg" alt="Destination card">
+                </div>
+                <div class="dest-card-head">
+                    <p>Goa</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="dest-card-location">
+                    <p>Goa, India</p>
+                </div>
+                <div class="dest-card-catogory">
+                    <span>Beach</span>
+                    <span><i class="fa-solid fa-star"></i>4.6</span>
+                </div>
+                <div class="dest-card-budget">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>15000 - <i
+                            class="fa-solid fa-indian-rupee-sign"></i>17000</p>
+                </div>
+                <div class="dest-card-btn">
+                    <a href="destination-details.html?id=3">
+                        <button type="button">
+                            View Details
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="dest-card">
+                <div class="dest-card-img">
+                    <img src="./assets/destinations/manali-main.jpg" alt="Destination card">
+                </div>
+                <div class="dest-card-head">
+                    <p>Manali</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="dest-card-location">
+                    <p>Himachal Pradesh, India</p>
+                </div>
+                <div class="dest-card-catogory">
+                    <span>Mountain</span>
+                    <span><i class="fa-solid fa-star"></i>4.7</span>
+                </div>
+                <div class="dest-card-budget">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>14000 - <i
+                            class="fa-solid fa-indian-rupee-sign"></i>17000</p>
+                </div>
+                <div class="dest-card-btn">
+                    <a href="destination-details.html?id=4">
+                        <button type="button">
+                            View Details
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="dest-card">
+                <div class="dest-card-img">
+                    <img src="./assets/destinations/Kashmir-main.jpg" alt="Destination card">
+                </div>
+                <div class="dest-card-head">
+                    <p>Kashmir</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="dest-card-location">
+                    <p>Jammu and Kashmir, India</p>
+                </div>
+                <div class="dest-card-catogory">
+                    <span>Nature</span>
+                    <span><i class="fa-solid fa-star"></i>4.9</span>
+                </div>
+                <div class="dest-card-budget">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>25000 - <i
+                            class="fa-solid fa-indian-rupee-sign"></i>28000</p>
+                </div>
+                <div class="dest-card-btn">
+                    <a href="destination-details.html?id=5">
+                        <button type="button">
+                            View Details
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="dest-card">
+                <div class="dest-card-img">
+                    <img src="./assets/destinations/Jaipur-main.jpg" alt="Destination card">
+                </div>
+                <div class="dest-card-head">
+                    <p>Jaipur</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="dest-card-location">
+                    <p>Rajasthan, India</p>
+                </div>
+                <div class="dest-card-catogory">
+                    <span>Historical</span>
+                    <span><i class="fa-solid fa-star"></i>4.6</span>
+                </div>
+                <div class="dest-card-budget">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>9000 - <i
+                            class="fa-solid fa-indian-rupee-sign"></i>11000</p>
+                </div>
+                <div class="dest-card-btn">
+                    <a href="destination-details.html?id=6">
+                        <button type="button">
+                            View Details
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-view-more-btn">
+            <a href="destinations.html"><button type="button">Viwe All <i
+                        class="fa-solid fa-chevron-down"></i></button></a>
+        </div>
+    </div>
+
+    <!-- page 3 Explore by category -->
+    <div class="explore-by-category">
+        <div class="explore-head">
+            <p>Explore By Category</p>
+        </div>
+        <div class="explore-container">
+            <a href="./destinations.html" class="explore-items"><button type="button">Beach</button></a>
+            <a href="./destinations.html" class="explore-items"><button type="button">Mountain</button></a>
+            <a href="./destinations.html" class="explore-items"><button type="button">Nature</button></a>
+            <a href="./destinations.html" class="explore-items"><button type="button">Historical</button></a>
+            <a href="./destinations.html" class="explore-items"><button type="button">City</button></a>
+        </div>
+    </div>
+
+    <!-- page 4 why choose WonderCompass -->
+    <div class="why-choose">
+        <div class="why-choose-header">
+            <div class="why-choose-head">
+                <p>Why Choose WanderCompass?</p>
+            </div>
+            <div class="why-choose-description">
+                <p>Plan your next journey with less searching and more confidence. WanderCompass brings useful
+                    destination information together in one simple travel experience.</p>
+            </div>
+        </div>
+        <div class="why-choose-cards">
+            <div class="why-choose-card">
+                <div class="why-choose-card-icon">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <div class="why-choose-card-text">
+                    <p>Explore Amazing Destinations</p>
+                </div>
+            </div>
+            <div class="why-choose-card">
+                <div class="why-choose-card-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="why-choose-card-text">
+                    <p>Find Your Perfect Destination</p>
+                </div>
+            </div>
+            <div class="why-choose-card">
+                <div class="why-choose-card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="why-choose-card-text">
+                    <p>Save Your Favorites</p>
+                </div>
+            </div>
+            <div class="why-choose-card">
+                <div class="why-choose-card-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="why-choose-card-text">
+                    <p>Get Complete Destination Information</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page 5 Call to Action -->
+    <div class="cta">
+        <div class="cta-icon">
+            <img src="./assets/icons/airplane-route.png" alt="destination icon">
+        </div>
+        <div class="cta-header">
+            <p>READY FOR YOUR NEXT ADVENTURE?</p>
+        </div>
+        <div class="cta-sub-head">
+            <p>Your Next Journey Starts Here</p>
+        </div>
+        <div class="cta-description">
+            <p>Discover inspiring destinations, explore new experiences, and find the perfect place for your next
+                adventure with WanderCompass.</p>
+        </div>
+        <div class="cta-button">
+            <a href="destinations.html">
+                <button type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Explore Destinations
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- page 6 Footer -->
+    <div class="footer-content">
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <p>WanderCompass</p>
+                    <p>Discover beautiful destinations, explore unforgettable experiences, and plan your next journey
+                        with
+                        WanderCompass.</p>
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://x.com/" target="_blank">
+                                    <i class="fa-brands fa-square-x-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <p>Quick Links</p>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-explore">
+                    <p>Explore</p>
+                    <ul>
+                        <li><a href="destinations.html?category=mountains">Mountains</a></li>
+                        <li><a href="destinations.html?category=beaches">Beaches</a></li>
+                        <li><a href="destinations.html?category=nature">Nature</a></li>
+                        <li><a href="destinations.html?category=historical">Historical</a></li>
+                        <li><a href="destinations.html?category=cities">Cities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-travel">
+                    <p>Travel With Us</p>
+                    <p>Start exploring new places and discover your next unforgettable adventure.</p>
+                    <div class="footer-dest-btn">
+                        <a href="destinations.html"><button>Explore Destinations</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-content">
+                    <p>&COPY; 2026 WanderCompass. All rights reserved.</p>
+                </div>
+                <div class="footer-copyright-link">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
